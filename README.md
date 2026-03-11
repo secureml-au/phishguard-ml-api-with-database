@@ -2,7 +2,7 @@
 
 A complete end-to-end machine learning pipeline for SMS/email phishing detection with Flask backend, SQLite database persistence, and Android client integration.
 
-## 🏗️ Architecture Overview
+##  Architecture Overview
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -29,7 +29,7 @@ A complete end-to-end machine learning pipeline for SMS/email phishing detection
 └──────────────────┘        └─────────────────┘
 ```
 
-## 📊 Database Schema
+##  Database Schema
 
 ### Table: `scan_history`
 Primary table storing all phishing scans with full audit trail.
@@ -100,7 +100,7 @@ Model performance tracking over time.
 | metric_date               | DATE        | Date of metrics (indexed)         |
 | created_at                | DATETIME    | Creation timestamp                |
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 - Python 3.8+
@@ -364,7 +364,7 @@ deleted = DataManagement.delete_old_scans(days=90)
 anonymized = DataManagement.anonymize_old_data(days=180)
 ```
 
-## 🧪 Testing
+##  Testing
 
 ### Test API endpoints with curl:
 
@@ -384,7 +384,7 @@ curl "http://localhost:5000/api/history?user_id=test_user&limit=10"
 curl http://localhost:5000/api/statistics/test_user
 ```
 
-## 📈 Production Deployment
+##  Production Deployment
 
 ### Using Gunicorn (Production WSGI Server)
 
@@ -421,7 +421,7 @@ EXPOSE 5000
 CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:5000", "app:app"]
 ```
 
-## 🔐 Security Considerations
+##  Security Considerations
 
 1. **API Authentication**: Add JWT or API key authentication for production
 2. **Rate Limiting**: Implement rate limiting to prevent abuse
@@ -431,7 +431,7 @@ CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:5000", "app:app"]
 6. **HTTPS**: Always use HTTPS in production
 7. **Data Privacy**: Implement data retention and anonymization policies
 
-## 📊 Performance Optimization
+##  Performance Optimization
 
 1. **Database Indexing**: Indexes on frequently queried columns (user_id, created_at)
 2. **Connection Pooling**: SQLAlchemy connection pool configured
@@ -439,7 +439,7 @@ CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:5000", "app:app"]
 4. **Async Processing**: Use Celery for heavy analytics tasks
 5. **Model Loading**: Models loaded once at startup, not per request
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Issue: Model files not found
 **Solution:** Create a `models` directory and add your trained model files, or the API will use mock predictions.
@@ -459,18 +459,18 @@ CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:5000", "app:app"]
 - Use model quantization
 - Consider TensorFlow Lite for mobile deployment
 
-## 📚 Additional Resources
+##  additional Resources
 
 - [Flask Documentation](https://flask.palletsprojects.com/)
 - [SQLAlchemy ORM](https://docs.sqlalchemy.org/)
 - [Retrofit Documentation](https://square.github.io/retrofit/)
 - [Scikit-learn](https://scikit-learn.org/)
 
-## 📝 License
+##  License
 
 Apache-2.0 license - see LICENSE file for details
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions welcome! Please submit pull requests or open issues for bugs/features.
 
@@ -478,4 +478,4 @@ Contributions welcome! Please submit pull requests or open issues for bugs/featu
 
 **Built with Passion and a lot of Coffee, for secure communication**
 
-Author: Ares Coding 
+Author: Au Amores
