@@ -478,4 +478,4 @@ Contributions welcome! Please submit pull requests or open issues for bugs/featu
 
 **Built with Passion and a lot of Coffee, for secure communication**
 
-Author: Au Amores - AI|ML Engineer
+Author: Au Amores - AI|ML Engineer | Python Dev
